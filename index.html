@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signature Maker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-slate-900 min-h-screen">
+    <div class="container mx-auto px-4 py-12 max-w-full sm:max-w-5xl">
+        <div class="text-center mb-12 relative">
+            <h3 class="text-4xl sm:text-6xl font-bold text-white mb-4 tracking-tight">Digital Signature Maker</h3>
+            <p class="text-lg sm:text-xl text-blue-200 opacity-90">Professional Digital Signatures Made Simple.</p>
+            <div class="absolute inset-0 bg-blue-500/10 blur-3xl -z-10 rounded-full"></div>
+        </div>
+        
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-white/20">
+         
+            <!-- Toolbar -->
+            <div class="toolbar p-6 bg-gray-50 border-b border-gray-200">
+                <div class="flex flex-wrap justify-between items-center gap-6">
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <label for="colorPicker" class="text-sm font-medium text-gray-700">Pen Color</label>
+                            <input type="color" id="colorPicker" class="w-12 h-8 rounded cursor-pointer input-control">
+                        </div>
+                        
+                        <div class="flex items-center gap-2">
+                            <label for="canvasColor" class="text-sm font-medium text-gray-700">Background</label>
+                            <input type="color" id="canvasColor" value="#ffffff" class="w-12 h-8 rounded cursor-pointer input-control">
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Responsiveness -->
+                    <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+                        <div class="flex items-center gap-2 w-full sm:w-auto">
+                            <label for="lineWidthSlider" class="text-sm font-medium text-gray-700">Line Width</label>
+                            <input type="range" id="lineWidthSlider" min="2" max="20" value="2" 
+                                class="w-32 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                            <span id="lineWidthValue" class="text-sm text-gray-600 min-w-[3ch]">2px</span>
+                        </div>
+                        
+                        <button id="eraserButton" 
+                            class="w-full sm:w-auto px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 active:bg-blue-500 transition-colors duration-200 font-medium">
+                                Eraser
+                        </button>
+
+                        <button id="undoButton" 
+                            class="w-full sm:w-auto px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-200 font-medium">
+                            Undo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Canvas -->
+            <div class="canvas-wrapper p-6 bg-white">
+                <canvas id="myCanvas" class="canvas w-full border-2 border-gray-200 rounded-lg" width="900" height="350"></canvas>
+            </div>
+            
+            <!-- Footer buttons -->
+            <div class="p-6 bg-gray-50 border-t border-gray-200">
+                <div class="flex flex-wrap justify-between items-center gap-4">
+                    <button id="clearButton" 
+                        class="w-full sm:w-auto px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-200 font-medium shadow-sm mb-4 sm:mb-0">
+                        Clear Canvas
+                    </button>
+                    <div class="flex flex-wrap gap-4 w-full sm:w-auto">
+                        <button id="saveButton" 
+                            class="w-full sm:w-auto px-6 py-3 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors duration-200 font-medium shadow-sm mb-4 sm:mb-0">
+                           Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Attribution -->
+    <div class="fixed bottom-4 right-4 flex items-center gap-4 opacity-75 text-gray-500 hover:opacity-100 transition-opacity">
+        <a href="https://github.com/Adityacodes-arch" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
