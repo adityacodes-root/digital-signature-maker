@@ -5,8 +5,8 @@ A simple and professional tool to create custom digital signatures. Users can dr
 Live Link: https://adityacodes-arch.github.io/digital-signature-maker/
 
 
-![image](![image](https://github.com/user-attachments/assets/5766904a-3896-4a14-9b10-3b232d1cb06d)
-)
+![image](https://github.com/user-attachments/assets/fdde069b-22b1-4c71-b20b-46960f79660c)
+
 
 ## Features
 - **Draw Digital Signatures**: Users can freely draw signatures on a canvas with the mouse or touch.
