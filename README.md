@@ -2,9 +2,6 @@
 
 A simple and professional tool to create custom digital signatures. Users can draw their signature using various customizable settings such as pen color, line width, and background color. The signature can be saved as a PNG image, and the canvas can be cleared or undone at any time.
 
-Live Link: https://adityacodes-arch.github.io/digital-signature-maker/
-
-
 ![image](https://github.com/user-attachments/assets/fdde069b-22b1-4c71-b20b-46960f79660c)
 
 
